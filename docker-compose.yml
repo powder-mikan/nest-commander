@@ -8,3 +8,4 @@ services:
     stdin_open: true
     volumes:
       - ./app:/usr/src/app
+    command: npm run start:dev
