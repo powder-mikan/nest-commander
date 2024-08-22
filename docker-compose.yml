@@ -1,0 +1,10 @@
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./docker/nodejs/Dockerfile
+      target: development
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./app:/usr/src/app
